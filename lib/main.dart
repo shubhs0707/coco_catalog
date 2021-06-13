@@ -1,4 +1,5 @@
 import 'package:coco_catalog/screens/home_page.dart';
+import 'package:coco_catalog/screens/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
       debugShowCheckedModeBanner: false,
       title: 'Coco Catalog',
-      home: HomePage(),
+      routes: {
+        '/': (context) => HomePage(),
+        '/login': (context) => LoginPage()
+      },
     );
   }
 }
