@@ -1,5 +1,6 @@
 import 'package:coco_catalog/screens/home_page.dart';
 import 'package:coco_catalog/screens/login_page.dart';
+import 'package:coco_catalog/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,8 +20,8 @@ class MyApp extends StatelessWidget {
       title: 'Coco Catalog',
       initialRoute: '/login',
       routes: {
-        '/': (context) => HomePage(),
-        '/login': (context) => LoginPage()
+        MyRoutes.homepageRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage()
       },
     );
   }
