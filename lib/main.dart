@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: MyTheme.darkTheme(context),
+      theme: MyTheme.lightTheme(context),
       debugShowCheckedModeBanner: false,
       title: 'Coco Catalog',
       initialRoute: MyRoutes.homepageRoute,
