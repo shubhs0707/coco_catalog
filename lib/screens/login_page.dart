@@ -53,8 +53,9 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     TextFormField(
                       onChanged: (value) {
-                        name = value;
-                        setState(() {});
+                        setState(() {
+                          name = value;
+                        });
                       },
                       decoration: InputDecoration(
                         hintText: 'Enter username',

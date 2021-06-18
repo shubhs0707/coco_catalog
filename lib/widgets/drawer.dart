@@ -1,3 +1,4 @@
+import 'package:coco_catalog/utils/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -35,6 +36,7 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () => Navigator.pushNamed(context, MyRoutes.loginRoute),
               leading: Icon(
                 CupertinoIcons.profile_circled,
                 color: Colors.white,
