@@ -1,3 +1,4 @@
+import 'package:coco_catalog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,7 +12,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(name),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       body: Center(
         child: Text(
           'Welcome to $days days of flutter - $name',

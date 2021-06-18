@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           fontFamily: GoogleFonts.lato().fontFamily),
       debugShowCheckedModeBanner: false,
       title: 'Coco Catalog',
-      initialRoute: '/login',
+      initialRoute: MyRoutes.homepageRoute,
       routes: {
         MyRoutes.homepageRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage()
