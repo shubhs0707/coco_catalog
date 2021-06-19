@@ -1,4 +1,6 @@
+import 'package:coco_catalog/models/catalog.dart';
 import 'package:coco_catalog/widgets/drawer.dart';
+import 'package:coco_catalog/widgets/item_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -6,17 +8,19 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int days = 10;
-    String name = 'Shubham';
+    final dummyList = List.generate(10, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
         title: Text("Catalog App"),
       ),
       drawer: MyDrawer(),
-      body: Center(
-        child: Text(
-          'Welcome to $days days of flutter - $name',
-          style: TextStyle(fontSize: 20),
+      body: Padding(
+        padding: EdgeInsets.all(8),
+        child: ListView.builder(
+          itemCount: dummyList.length,
+          itemBuilder: (context, index) => ItemWidget(
+            item: dummyList[index],
+          ),
         ),
       ),
     );
