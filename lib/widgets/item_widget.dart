@@ -19,6 +19,7 @@ class ItemWidget extends StatelessWidget {
         trailing: Text(
           "₹ ${item.price}",
           textScaleFactor: 1.2,
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
     );
